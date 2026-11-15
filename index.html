@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17181d">
+  <title>Dapur Ibu — Masakan Rumahan Asli</title>
+  <meta name="description" content="Masakan Indonesia rumahan, dimasak segar dengan bumbu pilihan. Pesan menu favorit melalui WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header container-fluid">
+    <a class="brand" href="#home">DAPUR<span>IBU.</span></a>
+    <nav class="desktop-nav">
+      <a href="#menu">MENU</a><a href="#story">CERITA KAMI</a><a href="#cara-pesan">CARA PESAN</a><a href="#contact">KONTAK</a>
+    </nav>
+    <a class="header-order" href="#menu">PESAN SEKARANG ↗</a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> MASAKAN RUMAHAN • DIBUAT SEGAR</div>
+        <h1>Hangatnya rumah,<br><em>di setiap</em> suapan.</h1>
+        <p>Masakan Indonesia dengan bumbu pilihan dan rasa yang akrab di lidah. Dimasak segar setiap hari, seperti masakan di rumah sendiri.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#menu">LIHAT MENU <span>↗</span></a><a class="text-btn" href="#story">KENALI DAPUR KAMI ↓</a></div>
+        <div class="hero-note"><span>✳</span> Dimasak fresh setiap hari <b>•</b> Bumbu rumahan</div>
+      </div>
+
+      <div class="food-slider" aria-label="Galeri makanan">
+        <div class="slides">
+          <article class="slide active">
+            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1400&q=90" alt="Hidangan segar dengan sayuran dan lauk">
+            <div class="slide-shade"></div><div class="slide-caption"><small>01 / MENU FAVORIT</small><strong>Nasi ayam komplit</strong><span>Lengkap dengan lauk dan sambal rumahan</span></div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1400&q=90" alt="Semangkuk masakan rumahan">
+            <div class="slide-shade"></div><div class="slide-caption"><small>02 / DARI DAPUR KAMI</small><strong>Ayam bumbu rempah</strong><span>Gurih, hangat, dan kaya rasa</span></div>
+          </article>
+          <article class="slide">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=90" alt="Makanan sehat dan segar">
+            <div class="slide-shade"></div><div class="slide-caption"><small>03 / SAYUR & LAUK</small><strong>Selalu fresh</strong><span>Dimasak harian untuk keluarga</span></div>
+          </article>
+        </div>
+        <div class="slider-bottom"><div class="slide-count"><b id="current-slide">01</b><span></span>03</div><div class="slider-controls"><button id="prev-slide" aria-label="Slide sebelumnya">←</button><button id="next-slide" aria-label="Slide berikutnya">→</button></div></div>
+        <div class="slider-progress"><i id="slider-progress"></i></div>
+      </div>
+      <div class="hero-bottomline"><span>MASAKAN INDONESIA RUMAHAN</span><span>BUMBU PILIHAN • FRESH DAILY</span><span>SCROLL UNTUK MENJELAJAH ↓</span></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="section-top"><div><div class="section-label">01 / MENU PILIHAN</div><h2>Menu rumahan<br><em>favorit keluarga.</em></h2></div><p>Pilihan lauk dan sayur khas Indonesia, dimasak dengan bumbu rumahan yang kaya rasa.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=900&q=85" alt="Menu nasi dan lauk"><span class="menu-tag">BEST SELLER</span></div><div class="menu-info"><div><h3>Nasi Ayam Komplit</h3><p>Nasi hangat, ayam berbumbu, tumis sayur, dan sambal.</p></div><strong>Rp25.000</strong></div><a class="order-link" href="#contact" data-order="Nasi Ayam Komplit">PESAN MENU <span>↗</span></a></article>
+        <article class="menu-card"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=85" alt="Hidangan spesial"><span class="menu-tag">MENU SPESIAL</span></div><div class="menu-info"><div><h3>Ayam Bumbu Kuning</h3><p>Ayam gurih dengan rempah pilihan dan aroma khas dapur.</p></div><strong>Rp30.000</strong></div><a class="order-link" href="#contact" data-order="Ayam Bumbu Kuning">PESAN MENU <span>↗</span></a></article>
+        <article class="menu-card"><div class="menu-photo"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Menu sayur segar"><span class="menu-tag">FRESH DAILY</span></div><div class="menu-info"><div><h3>Paket Sayur & Lauk</h3><p>Sayur harian dan lauk rumahan untuk makan lebih lengkap.</p></div><strong>Rp20.000</strong></div><a class="order-link" href="#contact" data-order="Paket Sayur & Lauk">PESAN MENU <span>↗</span></a></article>
+      </div>
+      <p class="menu-disclaimer">*Nama menu, foto, dan harga di atas adalah contoh. Silakan sesuaikan dengan produk jualanmu.</p>
+    </section>
+
+    <section class="story-section section-pad" id="story">
+      <div class="story-photo"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=85" alt="Suasana dapur memasak makanan"></div>
+      <div class="story-copy"><div class="section-label">02 / CERITA DAPUR KAMI</div><h2>Bumbu sederhana,<br><em>rasa yang istimewa.</em></h2><p>Dari ayam berbumbu hingga sayur rumahan, setiap hidangan disiapkan dengan bahan pilihan dan racikan bumbu yang akrab di meja makan keluarga. Kami ingin setiap pesanan terasa hangat, segar, dan memuaskan.</p><div class="story-points"><span>✳ Bahan segar</span><span>✳ Dimasak harian</span><span>✳ Bumbu rumahan</span></div></div>
+    </section>
+
+    <section class="order-section section-pad" id="cara-pesan"><div class="section-label">03 / MUDAH UNTUK MEMESAN</div><h2>Mau makan enak?<br><em>Pesannya mudah.</em></h2><div class="steps"><div><b>01</b><h3>Pilih menu</h3><p>Pilih nasi, ayam, lauk, atau sayur favoritmu.</p></div><div><b>02</b><h3>Hubungi kami</h3><p>Tentukan menu dan jumlah porsi melalui WhatsApp.</p></div><div><b>03</b><h3>Terima pesanan</h3><p>Konfirmasi jadwal ambil atau opsi pengantaran.</p></div></div></section>
+
+    <section class="contact-section section-pad" id="contact"><div class="contact-inner"><div class="section-label">04 / SIAP MAKAN ENAK?</div><h2>Lauk enak menunggumu.</h2><p>Pilih menu favorit, lalu pesan langsung lewat WhatsApp.</p><a class="primary-btn" id="whatsapp-order" href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20makanan." target="_blank" rel="noopener">PESAN VIA WHATSAPP <span>↗</span></a><small>Nomor WhatsApp masih contoh — ganti dengan nomor tokomu di file script.js.</small></div><footer><a class="brand" href="#home">DAPUR<span>IBU.</span></a><span>MASAKAN RUMAHAN DENGAN SEPENUH HATI</span><small>© <span id="year"></span> DAPUR RUMAH</small></footer></section>
+  </main>
+
+  <a class="floating-whatsapp" id="floating-whatsapp" href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20menu%20hari%20ini." target="_blank" rel="noopener" aria-label="Chat Dapur Ibu melalui WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C8.88 3 3.05 8.78 3.05 15.9c0 2.28.6 4.5 1.74 6.47L3 29l6.83-1.78a13.1 13.1 0 0 0 6.2 1.56h.01c7.16 0 12.99-5.78 12.99-12.9A12.8 12.8 0 0 0 16.04 3Zm0 23.6h-.01a10.9 10.9 0 0 1-5.55-1.51l-.4-.24-4.05 1.05 1.08-3.92-.26-.4a10.7 10.7 0 0 1-1.67-5.68c0-5.9 4.88-10.7 10.87-10.7 2.9 0 5.63 1.12 7.68 3.16a10.55 10.55 0 0 1 3.18 7.54c0 5.9-4.88 10.7-10.87 10.7Zm5.97-8.02c-.33-.16-1.93-.94-2.23-1.05-.3-.11-.52-.16-.74.16-.22.32-.85 1.05-1.04 1.27-.19.21-.38.24-.71.08-.33-.16-1.39-.51-2.65-1.63-.98-.86-1.64-1.92-1.83-2.25-.19-.32-.02-.5.14-.66.14-.14.33-.38.49-.57.16-.19.22-.32.33-.54.11-.21.05-.4-.03-.56-.08-.16-.74-1.76-1.01-2.41-.27-.63-.54-.55-.74-.56h-.63c-.22 0-.57.08-.87.4-.3.32-1.14 1.1-1.14 2.68s1.17 3.1 1.33 3.31c.16.21 2.3 3.48 5.57 4.88.78.33 1.39.53 1.87.68.79.25 1.51.22 2.08.13.63-.09 1.93-.78 2.2-1.54.27-.75.27-1.4.19-1.54-.08-.14-.3-.22-.63-.38Z"/></svg>
+    <span>Pesan</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
