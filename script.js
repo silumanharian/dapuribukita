@@ -5,7 +5,7 @@ function next(){showSlide(current+1)}function previous(){showSlide(current-1)}do
 function restart(){clearInterval(autoTimer);autoTimer=setInterval(next,duration)}restart();
 document.querySelectorAll('[data-order]').forEach(link=>link.addEventListener('click',()=>{const item=encodeURIComponent(link.dataset.order);document.querySelector('#whatsapp-order').href=`https://wa.me/6281234567890?text=${encodeURIComponent('Halo, saya ingin memesan '+link.dataset.order+'. Apakah masih tersedia?')}`}));document.querySelector('#year').textContent=new Date().getFullYear();
 // Ganti nomor di bawah ini dengan nomor WhatsApp bisnis, format internasional tanpa tanda + atau spasi.
-const WHATSAPP_NUMBER='6281234567890'; // GANTI dengan nomor WhatsApp tokomudocument.querySelector('#whatsapp-order').href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Halo, saya ingin memesan makanan.')}`;
+const WHATSAPP_NUMBER='6285750098738'; // GANTI dengan nomor WhatsApp tokomudocument.querySelector('#whatsapp-order').href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Halo, saya ingin memesan makanan.')}`;
 const floatingWhatsApp=document.querySelector('#floating-whatsapp');
 if(floatingWhatsApp) floatingWhatsApp.href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Halo, saya ingin bertanya tentang menu hari ini.')}`;
 document.querySelectorAll('[data-order]').forEach(link=>link.addEventListener('click',()=>{document.querySelector('#whatsapp-order').href=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('Halo, saya ingin memesan '+link.dataset.order+'. Apakah masih tersedia?')}`}));
